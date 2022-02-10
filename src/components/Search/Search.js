@@ -19,7 +19,7 @@ const Search = props => {
           updatePageNumber(1);
           setSearch(e.target.value);
         }}
-        placeholder="Search for characters"
+        placeholder="Busqueda de personaje"
         className={styles.input}
         type="text"
       />

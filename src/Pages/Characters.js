@@ -22,7 +22,7 @@ const Characters = () => {
 
   const { results } = state.state.pageCharacters[pageNumber] || [];
   const info = state.state.currentInfo;
-  const maxItemPeerPage = 20;
+  const maxItemPeerPage = 20
   const maxPage = 42;
 
   let resultMockCharacters = useRef([]);
@@ -76,9 +76,20 @@ const Characters = () => {
     })();
   }, [pageNumber, search, status, gender, species]);
 
+  useEffect(() => {
+    console.log('ingreso')
+    return () => {
+      console.log('me salgo')
+    }
+  }, []);
+
+  useEffect(() => {
+    console.log('ingreso')
+  });
+
   return (
     <div className="episodes">
-      <h1 className="text-center mb-3">Characters</h1>
+      <h1 className="text-center mb-3">Personaje</h1>
       { showModal &&
         <Modal
           onClose={() => setShowModal(false)}

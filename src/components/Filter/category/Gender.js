@@ -14,7 +14,7 @@ const Gender = ({ updateGender, updatePageNumber }) => {
           aria-expanded="false"
           aria-controls="collapseThree"
         >
-          Gender
+          Género
         </button>
       </h2>
       <div
