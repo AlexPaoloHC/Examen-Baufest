@@ -4,6 +4,7 @@ const initialState = {
     allCharacters: [],
     pageCharacters: [],
     currentPage: 0,
+    currentInfo: {},
 };
 
 const store = createContext(initialState);
@@ -21,13 +22,15 @@ const StateProvider = ({ children }) => {
                     ...state,
                     currentPage: action.payload.page,
                     pageCharacters: characters,
+                    currentInfo:  Object.keys(state.currentInfo).length === 0 ? {...action.payload.data.info} : {...state.currentInfo},
                     allCharacters: characters.flatMap( contentPage => contentPage )
                 }
             case 'RESET_CHARACTERS':
                 return {
                     ...state,
                     pageCharacters: [],
-                    allCharacters: []
+                    allCharacters: [],
+                    currentInfo: {}
                 }
             default:
                 break;

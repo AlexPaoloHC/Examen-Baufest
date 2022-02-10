@@ -1,0 +1,82 @@
+.c-modal__container
+    position: fixed
+    width: 100vw
+    height: 100%
+    top: 0
+    left: 0
+    z-index: 99999999
+    background: rgba(0,0,0,0.50)
+    box-sizing: border-box
+    animation-name: name !important
+    &.p-100
+        padding-bottom: 30px
+        padding-top: 40px
+.c-modal__head
+    background: rgba(0,0,0,0.50)
+    width: 100%
+    height: 40px
+    display: flex
+    justify-content: flex-end
+    position: absolute
+    top: 0
+    z-index: 1
+.c-modal__icons
+    display: flex
+    width: 100px
+    height: 100%
+    justify-content: flex-end
+    padding: 0
+    i
+        width: 40px
+        height: 40px
+        padding: 6px
+        box-sizing: border-box
+        svg
+            width: 100%
+            height: 100%
+            fill: var(--color-gray)
+        &:hover
+            svg
+                fill: var(--color-white)
+                opacity: 0.8
+                transition: ease all .3s
+    @media screen and ( min-width: 960px )
+        padding: 0 40px
+.c-modal__body
+    display: flex
+    align-items: center
+    justify-content: center
+    box-sizing: border-box
+    height: 100%
+    padding: 0 30px
+    z-index: 1
+    img
+        width: 100%
+        z-index: 2
+        transform: scale3d(1, 1, 1)
+        animation-duration: .3s
+        animation-timing-function: ease-in-out
+        animation-name: expandIn
+        @media screen and ( min-width: 800px )
+            height: 100%
+            width: initial
+.c-modal__content
+    background: white
+    min-width: 240px
+    min-height: 280px
+    padding: 20px
+    border-radius: 8px
+    position: relative
+.c-modal__close
+    position: absolute
+    right: 0
+    top: 0
+    padding: 10px
+    cursor: pointer
+.c-modal__background
+    background: transparent
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: -1

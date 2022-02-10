@@ -1,3 +1,6 @@
+.App {
+  background-color: #c7ffe5;
+}
 .active {
   color: #0b5ed7 !important;
   font-weight: bold;
@@ -14,6 +17,7 @@
 }
 .navbar {
   position: fixed;
+  background: #05e67e !important;
   width: 100%;
   top: 0;
   z-index: 20;

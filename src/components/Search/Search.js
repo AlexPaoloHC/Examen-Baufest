@@ -1,10 +1,15 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import styles from "./Search.module.scss";
 
-const Search = ({ setSearch, updatePageNumber }) => {
-  let searchBtn = (e) => {
-    e.preventDefault();
-  };
+const Search = props => {
+  const {
+    setSearch,
+    actionAdd,
+    updatePageNumber } = props;
+
+  let searchBtn = (e) => e.preventDefault();
+
   return (
     <form
       className={`${styles.search} d-flex flex-sm-row flex-column align-items-center justify-content-center gap-4 mb-5`}
@@ -22,10 +27,23 @@ const Search = ({ setSearch, updatePageNumber }) => {
         onClick={searchBtn}
         className={`${styles.btn} btn btn-primary fs-5`}
       >
-        Search
+        Buscar
+      </button>
+
+      <button
+        onClick={actionAdd}
+        className={`${styles.btn} btn btn-primary fs-5`}
+      >
+        Agregar Nuevo
       </button>
     </form>
   );
 };
+
+Search.propTypes = {
+  setSearch: PropTypes.func.isRequired,
+  actionAdd: PropTypes.func.isRequired,
+  updatePageNumber: PropTypes.func.isRequired,
+}
 
 export default Search;
