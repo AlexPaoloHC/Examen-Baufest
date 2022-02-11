@@ -7,7 +7,8 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
       <div className="container">
         <Link to="/" className="navbar-brand fs-3 ubuntu">
-          Festi Rick & Morty <span className="text-primary">Festi</span>
+        <span className="text-white" >Baufest  </span>
+        <span>Rick & Morty</span>
         </Link>
         <style jsx>{`
           button[aria-expanded="false"] > .close {
@@ -34,15 +35,15 @@ const Navbar = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav fs-5">
-            <NavLink to="/" className="nav-link">
+            <NavLink to="/" className="nav-link text-white" >
               Personajes
             </NavLink>
-            <NavLink to="/episodes" className="nav-link">
+            <NavLink to="/episodes" className="nav-link text-white">
               Episodios
             </NavLink>
             <NavLink
               activeClassName="active"
-              className="nav-link"
+              className="nav-link text-white"
               to="/location"
             >
               Ubicación

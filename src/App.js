@@ -7,6 +7,7 @@ import Characters from "./Pages/Characters";
 import Episodes from "./Pages/Episodes";
 import Location from "./Pages/Location";
 import CardDetails from "./components/Card/CardDetails";
+import "./Toolbox/General.css"
 
 import { StateProvider } from './context/store';
 

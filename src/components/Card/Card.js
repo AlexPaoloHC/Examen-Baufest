@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Card.module.sass";
-import CardDetails from "./CardDetails"
+//import CardDetails from "./CardDetails"
 
 
 const Card = ({ page, results, presentation }) => {

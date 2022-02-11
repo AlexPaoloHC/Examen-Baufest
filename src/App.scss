@@ -1,13 +1,14 @@
 .App {
-  background-color: #c7ffe5;
+  background-color: var(--color-main-background);
 }
 .active {
-  color: #0b5ed7 !important;
+  color: var(--color-white) !important;
   font-weight: bold;
-  border-bottom: 3px solid #0b5ed7;
+ border-bottom: 3px solid var(--color-white);
 }
 .episodes {
   padding: 80px;
+  margin-top: 60px;
   .container {
     padding-top: 0;
   }
@@ -17,11 +18,11 @@
 }
 .navbar {
   position: fixed;
-  background: #05e67e !important;
+  background:var(--color-primary) !important;
   width: 100%;
   top: 0;
   z-index: 20;
-  box-shadow: #0d6efd 1px 0px 8px;
+  box-shadow: 0 0 15px 1px #556f6d;
   .container {
     padding-top: 0;
   }

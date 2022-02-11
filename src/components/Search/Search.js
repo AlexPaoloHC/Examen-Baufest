@@ -12,7 +12,7 @@ const Search = props => {
 
   return (
     <form
-      className={`${styles.search} d-flex flex-sm-row flex-column align-items-center justify-content-center gap-4 mb-5`}
+      className={`${styles.search} d-flex flex-sm-row flex-column align-items-center justify-content-center gap-4 mb-5 mt-4`}
     >
       <input
         onChange={(e) => {
@@ -25,14 +25,14 @@ const Search = props => {
       />
       <button
         onClick={searchBtn}
-        className={`${styles.btn} btn btn-primary fs-5`}
+        className={`${styles.btn} btn btn-outline-success fs-5`}
       >
         Buscar
       </button>
 
       <button
         onClick={actionAdd}
-        className={`${styles.btn} btn btn-primary fs-5`}
+        className={`${styles.btn} btn btn-outline-success fs-5`}
       >
         Agregar Nuevo
       </button>

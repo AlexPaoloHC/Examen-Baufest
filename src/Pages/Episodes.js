@@ -27,7 +27,7 @@ const Episodes = () => {
 }, [api]);
   return (
     <div className="container">
-      <div className="row mb-3">
+      <div className="row mb-3 mt-5 pt-4">
         <h1 className="text-center mb-3">
           Episodio {episode}:{" "}
           <span className="text-primary">{name === "" ? "Unknown" : name}</span>
@@ -36,7 +36,7 @@ const Episodes = () => {
           Fecha de emisión: {air_date === "" ? "Unknown" : air_date}
         </h5>
       </div>
-      <div className="row">
+      <div className="row mt-5">
         <div className="col-lg-3 col-12 mb-4">
           <h4 className="text-center mb-4">Seleccione Episodio</h4>
           <InputGroup name="Episode" changeID={setID} total={51} />
